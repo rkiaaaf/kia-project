@@ -143,7 +143,8 @@ export function Toast({ msg, type }) {
 }
 
 export function IuranBanner({ hadirCount, iuran }) {
-  const due = hadirCount > 0 && hadirCount % 8 === 0;
+  export function IuranBanner({ hadirCount, iuran, paketSesi = 8 }) {
+  const due = hadirCount > 0 && hadirCount % paketSesi === 0;
   if (!due) return null;
   return (
     <div style={{
