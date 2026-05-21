@@ -1,3 +1,5 @@
+import { doc, getDoc, setDoc } from 'firebase/firestore';
+import { db } from './firebase';
 import { useState, useEffect } from 'react';
 import { loadData, saveData } from './storage.js';
 import Landing  from './Landing.jsx';
@@ -108,19 +110,49 @@ export default function App() {
   const [sessions, setSessions] = useState(null);
   const [settings, setSettings] = useState(null);
 
-  // Load from localStorage on mount
   useEffect(() => {
-    const s   = loadData('students');
-    const ses = loadData('sessions');
-    const cfg = loadData('settings');
-    setStudents(s   || DEFAULT_STUDENTS);
-    setSessions(ses || DEFAULT_SESSIONS);
-    setSettings(cfg || DEFAULT_SETTINGS);
-  }, []);
+  async function loadCloudData() {
+    const ref = doc(db, 'appData', 'main');
+    const snap = await getDoc(ref);
 
-  function updateStudents(data) { setStudents(data); saveData('students', data); }
-  function updateSessions(data) { setSessions(data); saveData('sessions', data); }
-  function updateSettings(data) { setSettings(data); saveData('settings', data); }
+    if (snap.exists()) {
+      const data = snap.data();
+
+      setStudents(data.students || DEFAULT_STUDENTS);
+      setSessions(data.sessions || DEFAULT_SESSIONS);
+      setSettings(data.settings || DEFAULT_SETTINGS);
+    } else {
+      const initialData = {
+        students: DEFAULT_STUDENTS,
+        sessions: DEFAULT_SESSIONS,
+        settings: DEFAULT_SETTINGS
+      };
+
+      await setDoc(ref, initialData);
+
+      setStudents(DEFAULT_STUDENTS);
+      setSessions(DEFAULT_SESSIONS);
+      setSettings(DEFAULT_SETTINGS);
+    }
+  }
+
+  loadCloudData();
+}, []);
+
+  async function updateStudents(data) {
+  setStudents(data);
+  await setDoc(doc(db, 'appData', 'main'), { students: data }, { merge: true });
+}
+
+async function updateSessions(data) {
+  setSessions(data);
+  await setDoc(doc(db, 'appData', 'main'), { sessions: data }, { merge: true });
+}
+
+async function updateSettings(data) {
+  setSettings(data);
+  await setDoc(doc(db, 'appData', 'main'), { settings: data }, { merge: true });
+}
 
   if (!students || !sessions || !settings) {
     return (
