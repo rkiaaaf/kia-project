@@ -156,7 +156,7 @@ export function IuranBanner({ hadirCount, iuran }) {
       <div>
         <div style={{ color: '#fbbf24', fontWeight: 800, fontSize: '13px' }}>Pemberitahuan Iuran</div>
         <div style={{ color: '#94a3b8', fontSize: '12px', marginTop: '2px' }}>
-          Sudah {Math.floor(hadirCount/8)*8} sesi hadir &middot; Iuran {formatRupiah(iuran)} sudah dapat dibayarkan
+          Sudah {hadirCount} sesi hadir dari paket {paketSesi} sesi · Iuran {formatRupiah(iuran)} iuran dapat dibayarkan
         </div>
       </div>
     </div>
