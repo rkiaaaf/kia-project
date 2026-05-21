@@ -26,7 +26,7 @@ const DEFAULT_STUDENTS = [
   },
   {
     id: 's003', 
-    name: 'Julio Himawab', 
+    name: 'Julio Himawan', 
     kelas: 'Jarimatika', 
     code: 'JM-006', 
     avatar: 'JH', 
