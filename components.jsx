@@ -163,30 +163,12 @@ export function Toast({ msg, type }) {
           Pemberitahuan Iuran
         </div>
         <div style={{ color: '#94a3b8', fontSize: '12px', marginTop: '2px' }}>
-          Sudah {hadirCount} sesi hadir dari paket {paketSesi} sesi · Iuran {formatRupiah(iuran)} jatuh tempo
+          Sudah {hadirCount} sesi hadir dari paket {paketSesi} sesi · Iuran {formatRupiah(iuran)} sudah dapat dibayarkan
         </div>
       </div>
     </div>
   );
   }
-  if (!due) return null;
-  return (
-    <div style={{
-      background: 'linear-gradient(135deg, #f59e0b18, #ef444418)',
-      border: '1px solid #f59e0b44', borderRadius: '12px', padding: '14px 16px',
-      display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '16px',
-    }}>
-      <span style={{ fontSize: '22px' }}>🔔</span>
-      <div>
-        <div style={{ color: '#fbbf24', fontWeight: 800, fontSize: '13px' }}>Pemberitahuan Iuran</div>
-        <div style={{ color: '#94a3b8', fontSize: '12px', marginTop: '2px' }}>
-          Sudah {hadirCount} sesi hadir dari paket {paketSesi} sesi · Iuran {formatRupiah(iuran)} iuran dapat dibayarkan
-        </div>
-      </div>
-    </div>
-  );
-}
-
 // ─── Helpers ───────────────────────────────────────────────────────────────────
 export function formatRupiah(n) { return 'Rp ' + Number(n).toLocaleString('id-ID'); }
 export function formatDate(d) {
