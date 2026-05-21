@@ -90,7 +90,7 @@ const DEFAULT_STUDENTS = [
     id: 's010', 
     name: 'Evy', 
     kelas: 'Baca Tulis', 
-    code: 'BT-005', 
+    code: 'BT005', 
     avatar: 'K', 
     iuran: 600000, 
     paketSesi: 8 
