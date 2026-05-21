@@ -10,7 +10,7 @@ const DEFAULT_STUDENTS = [
     id: 's001', 
     name: 'Kia', 
     kelas: 'Kelas Bermain', 
-    code: 'KB-009', 
+    code: 'KB009', 
     avatar: 'K', 
     iuran: 400000, 
     paketSesi: 4 
@@ -19,7 +19,7 @@ const DEFAULT_STUDENTS = [
     id: 's002', 
     name: 'Kia', 
     kelas: 'Baca Tulis', 
-    code: 'BT-008', 
+    code: 'BT008', 
     avatar: 'K', 
     iuran: 600000, 
     paketSesi: 8 
@@ -28,10 +28,72 @@ const DEFAULT_STUDENTS = [
     id: 's003', 
     name: 'Julio Himawan', 
     kelas: 'Jarimatika', 
-    code: 'JM-006', 
+    code: 'JM001', 
     avatar: 'JH', 
     iuran: 300000, 
     paketSesi: 4
+  },
+  { 
+    id: 's004', 
+    name: 'Rasendria Nararya Al Falah', 
+    kelas: 'Baca Tulis', 
+    code: 'BT001', 
+    avatar: 'RN', 
+    iuran: 650000, 
+    paketSesi: 8 
+  },
+  { 
+    id: 's005', 
+    name: 'Zeno Zeiss Rire Sontara', 
+    kelas: 'Baca Tulis', 
+    code: 'BT002', 
+    avatar: 'ZZ', 
+    iuran: 450000, 
+    paketSesi: 8 
+  },{ 
+    id: 's006', 
+    name: 'Falisha Azmi Syafiqa', 
+    kelas: 'Baca Tulis', 
+    code: 'BT003', 
+    avatar: 'FA', 
+    iuran: 500000, 
+    paketSesi: 8 
+  },
+  { 
+    id: 's007', 
+    name: 'Gibran Ghani Dalimunthe', 
+    kelas: 'Baca Tulis', 
+    code: 'BT004', 
+    avatar: 'GG', 
+    iuran: 450000, 
+    paketSesi: 8 
+  },
+  { 
+    id: 's008', 
+    name: 'Zhenya Zea Rire Sontara', 
+    kelas: 'Jarimatika', 
+    code: 'JM002', 
+    avatar: 'ZZ', 
+    iuran: 550000, 
+    paketSesi: 8 
+  },
+  { 
+    id: 's009', 
+    name: 'Zeno Zeiss Rire Sontara', 
+    kelas: 'Jarimatika', 
+    code: 'JM003', 
+    avatar: 'ZZ', 
+    iuran: 550000, 
+    paketSesi: 8 
+  },
+  { 
+    id: 's010', 
+    name: 'Evy', 
+    kelas: 'Baca Tulis', 
+    code: 'BT-005', 
+    avatar: 'K', 
+    iuran: 600000, 
+    paketSesi: 8 
   },
 ];
 
