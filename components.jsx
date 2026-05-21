@@ -143,7 +143,7 @@ export function Toast({ msg, type }) {
 }
 
 export function IuranBanner({ hadirCount, iuran }) {
-  const due = hadirCount > 0 && hadirCount % 4 === 0;
+  const due = hadirCount > 0 && hadirCount % 8 === 0;
   if (!due) return null;
   return (
     <div style={{
@@ -155,7 +155,7 @@ export function IuranBanner({ hadirCount, iuran }) {
       <div>
         <div style={{ color: '#fbbf24', fontWeight: 800, fontSize: '13px' }}>Pemberitahuan Iuran</div>
         <div style={{ color: '#94a3b8', fontSize: '12px', marginTop: '2px' }}>
-          Sudah {hadirCount} sesi hadir &middot; Iuran {formatRupiah(iuran)} jatuh tempo
+          Sudah {Math.floor(hadirCount/8)*8} sesi hadir &middot; Iuran {formatRupiah(iuran)} sudah dapat dibayarkan
         </div>
       </div>
     </div>
