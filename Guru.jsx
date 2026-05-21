@@ -469,10 +469,10 @@ function SettingsView({ settings, onSave, onBack }) {
           letterSpacing:'0.1em', textTransform:'uppercase', marginBottom:'16px' }}>
           💰 Iuran
         </div>
-        <Input label="Nominal Iuran (Rp) per 4 Sesi Hadir" value={iuran}
-          onChange={setIuran} placeholder="150000" />
+      <Input label="Nominal Iuran (Rp) per 8 Sesi Hadir" value={iuran}
+  onChange={setIuran} placeholder="150000" />
         <div style={{ color:'#64748b', fontSize:'12px', marginTop:'-8px' }}>
-          Notifikasi akan muncul setiap {4} sesi kehadiran
+          Notifikasi akan muncul setiap {8} sesi kehadiran
         </div>
       </Card>
       <Card style={{ marginBottom:'14px' }}>
