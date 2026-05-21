@@ -142,7 +142,7 @@ export function Toast({ msg, type }) {
   );
 }
 
-export function IuranBanner({ hadirCount, iuran }) {
+
   export function IuranBanner({ hadirCount, iuran, paketSesi = 4 }) {
   const due = hadirCount > 0 && hadirCount % paketSesi === 0;
   if (!due) return null;
