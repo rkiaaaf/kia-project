@@ -121,10 +121,10 @@ export default function OrangTua({ students, sessions, settings, onBack }) {
         </Card>
 
         {/* Iuran Banner */}
-        <IuranBanner 
-  hadirCount={hadirCount} 
-  iuran={student.iuran || settings.iuran} 
-  paketSesi={student.paketSesi || 4} 
+        <IuranBanner
+  hadirCount={hadirCount}
+  iuran={student.iuran || settings.iuran}
+  paketSesi={student.paketSesi || (student.kelas === 'Kelas Bermain' ? 4 : 8)}
 />
 
         {/* Session History */}
