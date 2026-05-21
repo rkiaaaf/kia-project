@@ -6,9 +6,10 @@ import OrangTua from './OrangTua.jsx';
 
 // ─── Default seed data ─────────────────────────────────────────────────────────
 const DEFAULT_STUDENTS = [
-  { id: 's001', name: 'Rasendria Nararya Al Falah', kelas: 'Baca Tulis', code: 'BT001', avatar: 'AR', iuran: 650000 },
-  { id: 's002', name: 'Julio Himawan', kelas: 'Jarimatika', code: 'JM002', avatar: 'BP', iuran: 300000 },
+  { id: 's001', name: 'Rasendria Nararya Al Falah', kelas: 'Baca Tulis', code: 'BT-001', avatar: 'AR', iuran: 650000 },
+  { id: 's002', name: 'Julio Himawan', kelas: 'Jarimatika', code: 'JM-006', avatar: 'BP', iuran: 300000 },
   { id: 's003', name: 'Raiya', kelas: 'Kelas Bermain', code: 'KB003', avatar: 'CD', iuran: 600000 },
+  { id: 's004', name: 'Kia', kelas: 'Kelas Bermain', code: 'KB-009', avatar: 'K', iuran: 400000 }
 ];
 
 const DEFAULT_SESSIONS = [];
