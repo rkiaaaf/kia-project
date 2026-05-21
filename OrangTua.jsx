@@ -121,7 +121,11 @@ export default function OrangTua({ students, sessions, settings, onBack }) {
         </Card>
 
         {/* Iuran Banner */}
-        <IuranBanner hadirCount={hadirCount} iuran={student.iuran || settings.iuran} />
+        <IuranBanner 
+  hadirCount={hadirCount} 
+  iuran={student.iuran || settings.iuran} 
+  paketSesi={student.paketSesi || 8} 
+/>
 
         {/* Session History */}
         <div style={{ color: '#64748b', fontSize: '11px', fontWeight: 700,
