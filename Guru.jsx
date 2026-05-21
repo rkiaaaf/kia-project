@@ -81,7 +81,7 @@ export default function Guru({ students, sessions, settings, onUpdateStudents, o
       {toast && <Toast {...toast} />}
       <Card style={{ maxWidth: '400px', width: '100%' }}>
         <div style={{ textAlign: 'center', marginBottom: '28px' }}>
-          <div style={{ fontSize: '52px', marginBottom: '12px' }}>👨‍🏫</div>
+          <div style={{ fontSize: '52px', marginBottom: '12px' }}>👩🏼‍🏫</div>
           <h2 style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 900, fontSize: '22px',
             color: '#f1f5f9', margin: '0 0 6px' }}>Portal Guru</h2>
           <p style={{ color: '#64748b', fontSize: '13px' }}>
