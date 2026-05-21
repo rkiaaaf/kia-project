@@ -1,7 +1,7 @@
 export default function Landing({ onSelectPortal }) {
   return (
     <div style={{
-      minHeight: '100vh', background: '020817', display: 'flex',
+      minHeight: '100vh', background: '#0b1120', display: 'flex',
       flexDirection: 'column', alignItems: 'center', justifyContent: 'center',
       padding: '24px',
       backgroundImage: 'radial-gradient(ellipse 90% 60% at 50% -10%, #1e3a5f55, transparent)',
