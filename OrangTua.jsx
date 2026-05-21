@@ -124,7 +124,7 @@ export default function OrangTua({ students, sessions, settings, onBack }) {
         <IuranBanner 
   hadirCount={hadirCount} 
   iuran={student.iuran || settings.iuran} 
-  paketSesi={student.paketSesi || 8} 
+  paketSesi={student.paketSesi || 4} 
 />
 
         {/* Session History */}
