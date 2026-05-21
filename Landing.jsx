@@ -26,14 +26,14 @@ export default function Landing({ onSelectPortal }) {
           Siswa
         </h1>
         <p style={{ color: '#64748b', fontSize: '15px', maxWidth: '360px', lineHeight: 1.6 }}>
-          Platform laporan belajar yang transparan antara guru dan orang tua
+          Platform laporan belajar antara guru dan orang tua
         </p>
       </div>
 
       {/* Portal Cards */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', width: '100%', maxWidth: '460px' }}>
         <PortalCard
-          emoji="👨‍🏫"
+          emoji="👩🏼‍🏫"
           title="Portal Guru"
           desc="Input & kelola penilaian siswa"
           gradient="linear-gradient(160deg, #0c2040 0%, #0f172a 100%)"
