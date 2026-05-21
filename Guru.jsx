@@ -87,7 +87,6 @@ export default function Guru({ students, sessions, settings, onUpdateStudents, o
           <p style={{ color: '#64748b', fontSize: '13px' }}>
             Masukkan PIN untuk mengakses dashboard
           </p>
-          <p style={{ color: '#1e3a5f', fontSize: '11px', marginTop: '4px' }}>PIN default: 1234</p>
         </div>
         <Input label="PIN Guru" type="password" value={pin} onChange={setPin} placeholder="••••" />
         <button onClick={handleLogin} style={{
